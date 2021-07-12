@@ -1,5 +1,6 @@
+PREFIX:=/usr/local/
 install: ospm
-	cp ospm /usr/bin/
+	cp ospm $(PREFIX)
 ospm:
 	$(CC) -o ospm ospm_target_name.c
 .PHONY:
